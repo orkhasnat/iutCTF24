@@ -1,0 +1,7 @@
+-challenge_name: Reversible
+
+-description: May luck be with you.
+
+-author_name: gr007
+
+-points: 200

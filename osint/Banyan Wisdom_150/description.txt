@@ -1,0 +1,5 @@
+-challenge_name: Banyan Wisdom
+
+-description: My friend sent me all these pictures he took while he was on a tour outside Dhaka. I also want to visit this place. Can you visit the place and bring me the flag?
+
+-author_name: Mohammed Sami Khan

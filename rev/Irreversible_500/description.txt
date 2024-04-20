@@ -1,0 +1,9 @@
+-challenge_name: Irreversible
+
+-description: There needs to be at least one ir-reversible(?) challenge don't you think?
+
+-author_name: gr007
+
+-points: 500
+
+-depends: Reversible

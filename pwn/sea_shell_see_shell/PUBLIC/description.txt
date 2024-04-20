@@ -1,0 +1,5 @@
+Wanna get some sea shells? We have stacks of them!
+
+`nc ip port`
+pts: 150
+author: peace_ranger

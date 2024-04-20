@@ -1,0 +1,8 @@
+Solution approach:
+- Find out if there are any social media accounts using this email.
+`$holehe avalon8973@gmail.com`
+- It will show there is a twitter account using this email.
+- Now search in twitter, and you will find an account with the same id.
+- Look at the recent image post and find out the district name.
+
+Flag: iutctf{Sylhet}

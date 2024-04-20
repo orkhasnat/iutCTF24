@@ -1,0 +1,7 @@
+-challenge_name: Baby Rev
+
+-description: I was supposed to make the easiest rev challenge ever. But look what I made. A horrible mess of spheggatti that somehow does not work. But it is still the easiest one though ngl.
+
+-author_name: gr007
+
+-points: 50

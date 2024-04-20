@@ -1,0 +1,89 @@
+from flask import Flask, request, redirect, url_for, session
+import pandas as pd
+import os
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'
+
+# Get the directory of the main Python file
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Construct the path to the users.csv file
+csv_file_path = os.path.join(current_dir, 'users.csv')
+
+# Read user data from CSV file using pandas
+users_df = pd.read_csv(csv_file_path)
+
+@app.route('/')
+def index():
+    if 'username' in session:
+        return redirect(url_for('landing'))
+    return redirect(url_for('login'))
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        # Query the DataFrame for the username and password
+        user_data = users_df.query(f"username == '{username}' and password == '{password}'")
+        if not user_data.empty:
+            session['username'] = username
+            return redirect(url_for('landing'))
+        else:
+            return login_page(error='Invalid username or password.')
+    return login_page()
+
+@app.route('/landing')
+def landing():
+    if 'username' in session:
+        return landing_page(session['username'])
+    return redirect(url_for('login'))
+
+@app.route('/logout')
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('login'))
+
+def login_page(error=None):
+    html = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <h2>Login</h2>
+    """
+    if error:
+        html += f"<p style='color: red;'>{error}</p>"
+    html += """
+        <form method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </body>
+    </html>
+    """
+    return html
+
+def landing_page(username):
+    html = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <h2>Welcome, {username}!</h2>
+        <p>This is the landing page.</p>
+        <a href="/logout">Logout</a>
+    </body>
+    </html>
+    """
+    return html
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=False)

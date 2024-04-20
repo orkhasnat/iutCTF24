@@ -1,0 +1,5 @@
+-challenge_name: Wrong Email
+
+-description: I have just received a really offensive email from this address "avalon8973@gmail.com". Please help me find this person IRL. It seems they're moving around a lot. Flag format iutctf{District_name}.
+
+-author_name: Mohammed Sami Khan

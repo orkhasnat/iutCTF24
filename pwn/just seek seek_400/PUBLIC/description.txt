@@ -1,0 +1,6 @@
+Only perfect seekers will get the flag :) So be a seeker.
+
+N.B. Create a dummy "flag.txt" file before running the challenge binary.
+
+pts: 350
+author: peace_ranger

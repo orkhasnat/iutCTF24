@@ -1,0 +1,4 @@
+Welcome to the world of pwners! Lets solve this simple bof!
+
+pts: 50
+author: peace_ranger
