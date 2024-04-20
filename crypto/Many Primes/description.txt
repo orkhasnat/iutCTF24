@@ -1,0 +1,5 @@
+-challenge_name: Many Primes
+
+-description: Why get only two when you can have many...
+
+-author_name: Mohammed Sami Khan

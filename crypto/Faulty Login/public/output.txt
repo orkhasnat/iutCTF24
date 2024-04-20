@@ -1,0 +1,3 @@
+Enter your username: admin
+Enter your 8-digit pin: 
+Here is the encrypted flag: b'PM@ZFTNx\tgy\t@\x01jn\tJk\n|qGoi\x0f\x05\t|O\\C'

@@ -1,0 +1,5 @@
+-challenge_name: Faulty Login
+
+-description: Say hello to my super effective flag dispenser. Only the real user will be able to get the flag. Go ahead and try your best luck.
+
+-author_name: Mohammed Sami Khan

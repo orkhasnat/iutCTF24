@@ -1,0 +1,5 @@
+-challenge_name: Medusa's Layer
+
+-description: Good thing that  I have entrusted Medusa with guarding the flag. There are so many layers to her evil maze that you can never navigate to the hidden chamber hehe.
+
+-author_name: Sumit Alam Khan
