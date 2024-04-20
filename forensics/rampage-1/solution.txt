@@ -1,0 +1,2 @@
+Deauth attack was performed on the router. This will give us the mac address
+The ssid can be found from a beacon frame sent from that device.

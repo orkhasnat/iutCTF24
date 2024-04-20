@@ -1,0 +1,2 @@
+Apply a filter such that only packetes related to the wifi handshakes are present.
+Then convert it to a suitable format for cracking.

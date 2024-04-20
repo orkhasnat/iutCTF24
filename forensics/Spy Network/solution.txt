@@ -1,0 +1,5 @@
+There are bunch of logins in the pcap file. The player has to narrow down to the ones that uses local ips.
+
+There are multiple failed attemps. The player has to identify the successful attempt by observing the redirects and successive packets. The password was sent in base64, decode it and get the flag. 
+
+flag: iutctf{hobena}

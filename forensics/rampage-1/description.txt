@@ -1,0 +1,3 @@
+What is the mac address of the network device that was attacked ? Also find its ssid.
+
+flag format: iutctf{ssid_mac}
